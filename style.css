@@ -66,6 +66,17 @@ nav ul{
   }
 }
 
+nav ul::-webkit-scrollbar{
+  display:none;
+}
+
+nav{
+  background:white;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
 @media(max-width:700px){
   nav ul{
     flex-direction: column;
