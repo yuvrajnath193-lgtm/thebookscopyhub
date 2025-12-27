@@ -6,8 +6,7 @@
 *{
   box-sizing: border-box;
 }
-display:block;
-float:left;
+
 
 /* Page width control */
 .container{
@@ -56,6 +55,28 @@ nav ul{
     overflow-x:auto;
     padding:10px;
   }
+
+@media(max-width:700px){
+
+  nav{
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  nav ul{
+    display: flex;
+    flex-wrap: nowrap;   /* IMPORTANT */
+    white-space: nowrap; /* IMPORTANT */
+    gap: 18px;
+    overflow-x: auto;
+    padding: 10px 12px;
+    margin: 0;
+  }
+
+  nav li{
+    flex: 0 0 auto;      /* Force single line */
+  }
+}
 
   nav li{
     flex:0 0 auto;
