@@ -6,6 +6,8 @@
 *{
   box-sizing: border-box;
 }
+display:block;
+float:left;
 
 /* Page width control */
 .container{
@@ -79,6 +81,7 @@ h2{ font-size: 24px; }
     white-space:nowrap;
   }
 }
+
 
 .whatsapp {
   position: fixed;
