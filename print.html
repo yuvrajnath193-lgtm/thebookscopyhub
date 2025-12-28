@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Printout Service - The Books Copy Hub</title>
+
+  <style>
+
+    body{
+      font-family: Arial;
+      margin:0;
+      background:#f4f6ff;
+    }
+
+    .container{
+      max-width: 850px;
+      margin:auto;
+      padding:20px;
+    }
+
+    .card{
+      background:white;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2{
+      text-align:center;
+      color:#1f3bb3;
+      margin-bottom:15px;
+    }
+
+    label{
+      display:block;
+      margin-top:12px;
+      font-weight:bold;
+    }
+
+    input, select, textarea{
+      width:100%;
+      padding:10px;
+      border-radius:8px;
+      border:1px solid #ccc;
+      margin-top:5px;
+    }
+
+    input[type="file"]{
+      border:none;
+      padding:5px;
+    }
+
+    button{
+      width:100%;
+      margin-top:18px;
+      padding:12px;
+      border:none;
+      border-radius:10px;
+      background:#1f3bb3;
+      color:white;
+      font-size:16px;
+    }
+
+    button:hover{
+      background:#10238a;
+      cursor:pointer;
+    }
+
+    .note{
+      background:#eaf0ff;
+      padding:10px;
+      border-radius:10px;
+      margin-top:10px;
+      font-size:14px;
+    }
+
+    /* Mobile */
+    @media(max-width:600px){
+      .container{
+        padding:10px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="card">
+
+    <h2>📄 Printout Service Request</h2>
+
+    <div class="note">
+      Upload your PDF & fill details. We will print & deliver 📦
+    </div>
+
+    <form>
+
+      <label>Upload PDF</label>
+      <input type="file" accept="application/pdf" required>
+
+      <label>Your Name</label>
+      <input type="text" placeholder="Enter your name" required>
+
+      <label>Mobile Number</label>
+      <input type="tel" placeholder="Enter mobile number" required>
+
+      <label>Delivery / Pickup Address</label>
+      <textarea placeholder="Enter full address" rows="3" required></textarea>
+
+      <label>Number of Pages</label>
+      <input type="number" min="1" placeholder="Example: 20" required>
+
+      <label>Print Type</label>
+      <select>
+        <option>Black & White</option>
+        <option>Color</option>
+      </select>
+
+      <label>Additional Notes (Optional)</label>
+      <textarea rows="3" placeholder="Stapling / Both side / Etc"></textarea>
+
+      <button type="submit">Submit Request</button>
+
+    </form>
+
+  </div>
+
+</div>
+
+</body>
+</html>
