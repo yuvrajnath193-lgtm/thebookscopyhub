@@ -18,3 +18,15 @@ function searchProduct() {
     }
   }
 }
+
+const searchInput = document.querySelector(".search-box input");
+
+searchInput.addEventListener("keyup", function(){
+   let value = searchInput.value.toLowerCase();
+   let products = document.querySelectorAll(".product-card");
+
+   products.forEach(item=>{
+      let name = item.innerText.toLowerCase();
+      item.style.display = name.includes(value) ? "" : "none";
+   });
+});
