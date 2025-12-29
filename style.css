@@ -254,8 +254,15 @@ nav a:hover {
   box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
-.search-area{
-  margin: 5px 0;   /* pehle 15px hoga — use replace karo */
+.search-area {
+  margin-bottom: 4px;
+}
+
+h2.section-title,
+h2.category-title,
+h2 {
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .categories{
@@ -514,10 +521,6 @@ body {
 
 ----BOOKS----
 
-.search-box{
-  margin-bottom: 5px;
-}
-
 .section-title{
   text-align:center;
   font-size:22px;
@@ -554,6 +557,8 @@ body {
 h2{
   padding:0;
 }
+
+
 
 /* Desktop */
 @media (min-width:900px){
