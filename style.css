@@ -119,6 +119,19 @@ nav a:hover {
   transform: translateY(-3px);
 }
 
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);   /* MOBILE = 2 per row */
+  gap: 20px;
+}
+
+/* DESKTOP / LAPTOP */
+@media (min-width: 900px) {
+  .category-grid {
+    grid-template-columns: repeat(4, 1fr);  /* DESKTOP = 4 per row */
+  }
+}
+
 @media(max-width: 600px){
   .category-grid{
     grid-template-columns: repeat(2,1fr);
